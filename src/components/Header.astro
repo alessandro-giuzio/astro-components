@@ -1,0 +1,40 @@
+---
+import ThemeIcon from './ThemeIcon.astro';
+import logo from '../img/logo.png';
+import logoA from '../img/logoA.png';
+import logoB from '../img/logoB.png';
+import logoC from '../img/logoC.png';
+---
+
+<div class='flex justify-between items-center px-4 py-4 bg-white'>
+  <ThemeIcon />
+  <ul class='flex gap-4 uppercase'>
+    <li>
+      <img src={logo} class='max-h-[90px]' />
+    </li>
+    <li>
+      <img src={logoA} class='max-h-[90px]' />
+    </li>
+    <li>
+      <img src={logoB} class='max-h-[90px]' />
+    </li>
+    <li>
+      <img src={logoC} class='max-h-[90px]' />
+    </li>
+    <li>
+      <a href='#'><ThemeIcon /></a>
+    </li>
+    <li>
+      <a href='#'>Home</a>
+    </li>
+    <li>
+      <a href='#'>About</a>
+    </li>
+    <li>
+      <a href='#'>Contact</a>
+    </li>
+    <li>
+      <a href='#'>Blog</a>
+    </li>
+  </ul>
+</div>
