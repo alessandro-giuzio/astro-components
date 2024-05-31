@@ -6,22 +6,23 @@ import ThemeIcon from '../components/ThemeIcon.astro';
 import Header from '../components/Header.astro';
 import Button from '../components/Button.astro';
 import CalendarStripes from '../components/CalendarStripes.astro';
+import SquareBorderFillLoader from '../components/SquareBorderFillLoader.astro';
 ---
 
 <Layout title='Home'>
   <Header />
-  <div class='min-h-screen bg-blue-500 p-8 grid grid-cols-2'>
+  <div class='min-h-screen bg-blue-500 p-8 grid grid-cols-3'>
     <div class='mx-auto bg-white rounded-xl shadow-xl h-80 w-80 relative'>
       <Ribbon size='small'>Dynamic Ribbon</Ribbon>
       <Ribbon size='large'>Dynamic Ribbon</Ribbon>
+      <SquareBorderFillLoader />
       <Card />
       <Card />
       <Card />
     </div>
 
     <div
-      class='bg-white h-[300px] w-[300px] flex place-items-center justify-center'
-    >
+      class='bg-white h-[300px] w-[300px] flex place-items-center justify-center'>
       <Button />
     </div>
     <CalendarStripes />
